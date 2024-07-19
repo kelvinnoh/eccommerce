@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Order Details</h1>
+    </header>
+
+    <main>
+        <section class="order-form">
+            <h2>Customer Information</h2>
+            <form action="submit_order.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+                <h2>Order Summary</h2>
+                <ul>
+                    <li>Product Name: Product 1</li>
+                    <li>Quantity: 2</li>
+                    <li>Price: $XX.XX</li>
+                </ul>
+                <hr>
+
+                <!-- Add more products/order details as needed -->
+
+                <input type="submit" value="Place Order">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My E-commerce Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
